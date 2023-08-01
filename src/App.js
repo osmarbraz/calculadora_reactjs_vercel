@@ -43,7 +43,7 @@ function FrmCalculadora() {
                   </select></label><br/>
           <label>Valor B: 
           <input type="text" id="valorB" name="valorB" value={valorB} onChange={(event) => setValorB(event.target.value)} /></label><br/><br/>
-          <input type="button" value="Limpar"  onClick={limpar} />
+          <input type="button" name="Limpar" value="Limpar" onClick={limpar} />
           <input type="submit" name="Calcular" value="Calcular"/><br/><br/>
 
           <label>Resultado: {resultado} </label>     
