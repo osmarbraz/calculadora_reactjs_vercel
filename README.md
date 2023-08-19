@@ -10,3 +10,6 @@
 
 - Arquivos em src:
    - App.js - Interface do programa.
+
+- Vercel
+   https://calculadora-reactjs-vercel.vercel.app/
