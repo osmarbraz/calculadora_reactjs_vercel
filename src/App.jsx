@@ -14,7 +14,7 @@ function FrmCalculadora() {
       // Impede o recarregamento da página
       event.preventDefault();      
       //Endereço da API + operação + valorA + valorB
-      fetch(`https://calculadora-nodejs-vercel.vercel.app/${operacao}/${valorA}/${valorB}`)
+       fetch(`https://calculadora-nodejs-vercel.vercel.app/${operacao}/${valorA}/${valorB}`)
         .then((response) => response.json()) //Converte a resposta para JSON
         .then((data) => setResposta({a: data.a, b : data.b, operador: data.operador, resultado: data.resultado})); //Atribui a resposta as variáveis
     }
@@ -46,7 +46,7 @@ function FrmCalculadora() {
         <input type="button" name="Limpar" value="Limpar" onClick={limpar} />
         <input type="submit" name="Calcular" value="Calcular"/><br/><br/>
         <label>Resultado: </label> <br/>
-        <label> {resposta.a} {resposta.operador} {resposta.b} = {resposta.resultado} </label> <br/>
+        <label> {resposta.a} {resposta.operador} {resposta.b} = {resposta.resultado} </label>
     </form>
     )
   }
